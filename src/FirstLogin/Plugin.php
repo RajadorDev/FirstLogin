@@ -24,7 +24,7 @@ final class Plugin extends PluginBase
                 $username = strtolower($player->getName());
                 if (!$this->joinnedListFile->exists($username))
                 {
-                    $this->getServer()->broadcastMessage("§8-  §7è a primeira vez do jogador §f{$player->getName()} jogando neste servidor! Seja bem vindo");
+                    $this->getServer()->broadcastMessage("§8-  §7è a primeira vez do jogador §f{$player->getName()} §7jogando neste servidor! Seja bem vindo");
                     $this->joinnedListFile->set($username);
                     $this->joinnedListFile->save();
                 }
